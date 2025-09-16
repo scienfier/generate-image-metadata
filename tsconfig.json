@@ -1,0 +1,19 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true, // ✅ 确保这个选项为 true
+    "allowSyntheticDefaultImports": true, // ✅ 添加这个选项
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node" // ✅ 添加这个选项
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,15 @@
+{
+  "processing": {
+    "supportedFormats": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".tiff"],
+    "maxFileSize": 50000000,
+    "concurrency": 5
+  },
+  "output": {
+    "format": "json",
+    "pretty": true
+  },
+  "paths": {
+    "defaultInput": "./images",
+    "defaultOutput": "./output"
+  }
+}

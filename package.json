@@ -1,0 +1,26 @@
+{
+  "name": "image-metadata-processor",
+  "version": "1.0.0",
+  "description": "Process images and extract metadata",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "process": "npm run build && npm start",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0",
+    "fs-extra": "^11.2.0",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/mime-types": "^2.1.4",
+    "@types/sharp": "^0.32.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0"
+  }
+}
