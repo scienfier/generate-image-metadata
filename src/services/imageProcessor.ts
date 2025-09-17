@@ -25,7 +25,7 @@ export class ImageProcessor {
       const originalName = path.basename(filePath);
 
       // 生成新的文件名
-      const filename = FileUtils.generateUniqueFilename(originalName);
+      const filename = originalName;
 
       // 获取图片尺寸
       const metadata = await sharp(filePath).metadata();
